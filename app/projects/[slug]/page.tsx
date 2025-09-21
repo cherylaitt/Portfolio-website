@@ -167,7 +167,8 @@ const projectData: Record<string, ProjectData> = {
         images: [
           'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758474404/legacy-bootcamp-revamp_yqikyv.png',
           'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758474756/invitation-code-design_kmdvn8.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758474760/event-happening-design_cltby2.png'
+          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758474760/event-happening-design_cltby2.png',
+          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758476261/api-doc_mqpvyi.png'
         ],
         contributions: [
           'Revamped the legacy bootcamp system by new happening model and its dependencies to make it more flexible and scalable',
@@ -338,101 +339,36 @@ const projectData: Record<string, ProjectData> = {
     githubUrl: 'https://github.com/preface/customer-portal',
     features: [
       {
-        title: 'Personalized Dashboard',
-        description: 'Smart dashboard with personalized course recommendations',
-        detailedDescription: 'AI-powered dashboard that provides personalized course recommendations based on learning history, preferences, and skill assessments. Features include customizable widgets, quick access to recent activities, and intelligent content curation.',
+        title: 'Techbites Subscription',
+        description: 'Techbites Subscription',
+        detailedDescription: 'Techbites Subscription',
         images: [
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465720/customer-portal-login-page_ztcpl8.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758464324/home-hero-banner_i85a2z.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465036/admin-portal-happening-list-page_khrowp.png'
+          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758476150/subscription-list_hfleh3.png',
+          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758476143/stripe-payment_puvq1q.png',
+          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758476150/subscription-receipt_lvi8jq.png',
+          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758476163/techbites-video_eaysgm.png',
+          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758476140/user-journey_bqjsmb.png',
+          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758476141/subscription-bug-bash_ahtnlm.png'
         ],
         contributions: [
-          'AI-powered recommendations',
-          'Customizable dashboard widgets',
-          'Personalized learning paths',
-          'Quick access to key features'
+          'Implemented the subscription system to support the Techbites subscription',
+          'Integrated with Stripe subscription to the backend payment gateway to support the payment',
+          'Supported the user to manage their subscription and watch the videos',
+          'Carried out Testing and Bug bash to fix the issues of the subscription system',
+          'Collaborated with the content team for the ideas of the features of the subscription system'
         ]
       },
       {
-        title: 'Interactive Content',
-        description: 'Rich interactive course content with multimedia support',
-        detailedDescription: 'Engaging interactive content with embedded videos, simulations, quizzes, and hands-on exercises. Supports multiple content formats including SCORM packages, interactive presentations, and collaborative learning tools.',
+        title: 'Payment Link and Scheduling System',
+        description: 'Payment Link and Scheduling System',
+        detailedDescription: 'Payment Link and Scheduling System',
         images: [
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758464324/home-hero-banner_i85a2z.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465821/papp-google-listing_vaxewq.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465720/customer-portal-login-page_ztcpl8.png'
+          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758476641/payment-link-1_pir1yb.png'
         ],
         contributions: [
-          'Rich multimedia content',
-          'Interactive simulations and exercises',
-          'SCORM compliance support',
-          'Collaborative learning tools'
+          'Created the payment link and scheduling system to support the payment and scheduling of the 1-on-1 classes',
         ]
       },
-      {
-        title: 'Assignment System',
-        description: 'Complete assignment submission and grading system',
-        detailedDescription: 'Comprehensive assignment management system with automated grading, plagiarism detection, and detailed feedback tools. Supports various file formats, peer review functionality, and detailed analytics for instructors.',
-        images: [
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465036/admin-portal-happening-list-page_khrowp.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758464324/home-hero-banner_i85a2z.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465821/papp-google-listing_vaxewq.png'
-        ],
-        contributions: [
-          'Automated grading system',
-          'Plagiarism detection',
-          'Peer review functionality',
-          'Detailed feedback and analytics'
-        ]
-      },
-      {
-        title: 'Progress Tracking',
-        description: 'Advanced progress tracking with achievement badges',
-        detailedDescription: 'Sophisticated progress tracking with gamification elements, achievement badges, and detailed learning analytics. Features include skill mapping, competency tracking, and personalized learning recommendations based on performance.',
-        images: [
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465821/papp-google-listing_vaxewq.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465036/admin-portal-happening-list-page_khrowp.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758464324/home-hero-banner_i85a2z.png'
-        ],
-        contributions: [
-          'Gamification and achievement systems',
-          'Detailed learning analytics',
-          'Skill mapping and competency tracking',
-          'Personalized learning recommendations'
-        ]
-      },
-      {
-        title: 'Community Features',
-        description: 'Engaging community features and discussion forums',
-        detailedDescription: 'Robust community platform with discussion forums, study groups, peer mentoring, and collaborative learning spaces. Features include real-time chat, video conferencing integration, and community moderation tools.',
-        images: [
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758464324/home-hero-banner_i85a2z.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465720/customer-portal-login-page_ztcpl8.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465036/admin-portal-happening-list-page_khrowp.png'
-        ],
-        contributions: [
-          'Discussion forums and study groups',
-          'Peer mentoring and collaboration',
-          'Real-time chat and video integration',
-          'Community moderation tools'
-        ]
-      },
-      {
-        title: 'Mobile Responsive',
-        description: 'Fully responsive design optimized for all devices',
-        detailedDescription: 'Mobile-first responsive design that provides optimal user experience across all devices. Features include touch-optimized interfaces, offline capabilities, and progressive web app (PWA) functionality for native app-like experience.',
-        images: [
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465720/customer-portal-login-page_ztcpl8.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758464324/home-hero-banner_i85a2z.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465821/papp-google-listing_vaxewq.png'
-        ],
-        contributions: [
-          'Touch-optimized interfaces',
-          'Offline functionality',
-          'Progressive Web App features',
-          'Cross-device synchronization'
-        ]
-      }
     ],
     challenges: [
       'Creating an intuitive user interface for complex functionality',
