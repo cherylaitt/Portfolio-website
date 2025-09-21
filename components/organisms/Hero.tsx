@@ -18,7 +18,7 @@ const Hero: React.FC<HeroProps> = ({ className = '' }) => {
             <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-blue-500 to-purple-600 p-1">
               <div className="w-full h-full rounded-full bg-white dark:bg-gray-800 flex items-center justify-center">
                 <Typography variant="h1" size="4xl" weight="bold" color="accent">
-                  JD
+                  CL
                 </Typography>
               </div>
             </div>
@@ -28,19 +28,18 @@ const Hero: React.FC<HeroProps> = ({ className = '' }) => {
           <Typography variant="h1" size="5xl" weight="bold" className="mb-6">
             Hi, I&apos;m{' '}
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              John Doe
+              Cheryl Lai
             </span>
           </Typography>
           
           {/* Subtitle */}
           <Typography variant="h2" size="2xl" weight="medium" color="secondary" className="mb-8">
-            Full Stack Developer & UI/UX Designer
+            Full Stack Software Engineer
           </Typography>
           
           {/* Description */}
           <Typography variant="p" size="lg" color="secondary" className="mb-12 max-w-2xl mx-auto">
-            I create beautiful, functional, and user-centered digital experiences. 
-            Passionate about clean code, innovative design, and building products that make a difference.
+            I&apos;m a Full Stack Software Engineer with a passion for building scalable and efficient web applications.
           </Typography>
           
           {/* CTA Buttons */}

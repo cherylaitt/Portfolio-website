@@ -5,6 +5,8 @@ import Card from '../atoms/Card';
 import Typography from '../atoms/Typography';
 import Badge from '../atoms/Badge';
 import Button from '../atoms/Button';
+import { CldImage } from 'next-cloudinary';
+import Link from 'next/link';
 
 interface ProjectCardProps {
   title: string;
@@ -14,6 +16,7 @@ interface ProjectCardProps {
   liveUrl?: string;
   githubUrl?: string;
   className?: string;
+  slug: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -24,15 +27,18 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   liveUrl,
   githubUrl,
   className = '',
+  slug,
 }) => {
   return (
     <Card className={`overflow-hidden ${className}`} hover>
       {imageUrl && (
-        <div className="aspect-video overflow-hidden">
-          <img
-            src={imageUrl}
+        <div className="aspect-video overflow-hidden rounded-lg">
+          <CldImage
             alt={title}
-            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            src={imageUrl}
+            className="w-full h-full object-cover"
+            width="500" // Transform the image: auto-crop to square aspect_ratio
+            height="500"
           />
         </div>
       )}
@@ -55,8 +61,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
         
         <div className="flex gap-3">
-          {liveUrl && (
-            <Button variant="primary" size="sm" onClick={() => window.open(liveUrl, '_blank')}>
+          <Link
+            href={`/projects/${slug}`}
+            className="w-full inline-block hover:underline"
+          >
+              Details
+          </Link>
+          {/* {liveUrl && (
+            <Button variant="outline" size="sm" onClick={() => window.open(liveUrl, '_blank')}>
               Live Demo
             </Button>
           )}
@@ -64,7 +76,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             <Button variant="outline" size="sm" onClick={() => window.open(githubUrl, '_blank')}>
               GitHub
             </Button>
-          )}
+          )} */}
         </div>
       </div>
     </Card>

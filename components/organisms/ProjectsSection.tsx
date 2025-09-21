@@ -7,6 +7,7 @@ import ProjectCard from '../molecules/ProjectCard';
 interface Project {
   id: string;
   title: string;
+  slug: string;
   description: string;
   technologies: string[];
   imageUrl?: string;
@@ -22,50 +23,38 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = '' }) => 
   const projects: Project[] = [
     {
       id: '1',
-      title: 'E-Commerce Platform',
+      title: 'Preface Public Website',
+      slug: 'preface-public-website',
       description: 'A full-stack e-commerce platform built with Next.js, featuring user authentication, payment processing, and admin dashboard.',
-      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe', 'MongoDB'],
-      imageUrl: '/api/placeholder/600/400',
+      technologies: ['Next.js', 'React.js', 'TypeScript', 'Tailwind CSS', 'Material UI'],
+      imageUrl: 'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758464324/home-hero-banner_i85a2z.png',
       liveUrl: 'https://example.com',
     },
     {
       id: '2',
-      title: 'Task Management App',
+      title: 'Preface Admin Portal',
+      slug: 'preface-admin-portal',
       description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      technologies: ['React', 'Node.js', 'Socket.io', 'PostgreSQL', 'Redis'],
-      imageUrl: '/api/placeholder/600/400',
+      technologies: ['Ruby on Rails', 'PostgreSQL', 'jQuery', 'Sidekiq', 'Stripe', 'Heroku'],
+      imageUrl: 'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465036/admin-portal-happening-list-page_khrowp.png',
       liveUrl: 'https://example.com',
     },
     {
       id: '3',
-      title: 'Weather Dashboard',
+      title: 'Preface Mobile App',
+      slug: 'preface-mobile-app',
       description: 'A beautiful weather dashboard that displays current weather conditions and forecasts with interactive maps and charts.',
-      technologies: ['Vue.js', 'Chart.js', 'OpenWeather API', 'Vite', 'CSS3'],
-      imageUrl: '/api/placeholder/600/400',
+      technologies: ['React Native', 'Expo', 'Typescript', 'Stripe', 'Eats365'],
+      imageUrl: 'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465821/papp-google-listing_vaxewq.png',
       liveUrl: 'https://example.com',
     },
     {
       id: '4',
-      title: 'Portfolio Website',
+      title: 'Preface Customer Portal',
+      slug: 'preface-customer-portal',
       description: 'A modern, responsive portfolio website showcasing projects and skills with smooth animations and dark mode support.',
-      technologies: ['Next.js', 'React', 'Tailwind CSS', 'Framer Motion', 'TypeScript'],
-      imageUrl: '/api/placeholder/600/400',
-      liveUrl: 'https://example.com',
-    },
-    {
-      id: '5',
-      title: 'Social Media Dashboard',
-      description: 'A comprehensive social media management dashboard for scheduling posts, analyzing metrics, and managing multiple accounts.',
-      technologies: ['Angular', 'Express.js', 'MongoDB', 'JWT', 'Chart.js'],
-      imageUrl: '/api/placeholder/600/400',
-      liveUrl: 'https://example.com',
-    },
-    {
-      id: '6',
-      title: 'Fitness Tracking App',
-      description: 'A mobile-first fitness tracking application with workout planning, progress tracking, and social features.',
-      technologies: ['React Native', 'Firebase', 'Redux', 'Expo', 'Native Base'],
-      imageUrl: '/api/placeholder/600/400',
+      technologies: ['Next.js', 'React.js', 'JavaScript', 'Tailwind CSS', 'Material UI', 'Stripe'],
+      imageUrl: 'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465720/customer-portal-login-page_ztcpl8.png',
       liveUrl: 'https://example.com',
     },
   ];
@@ -95,6 +84,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = '' }) => 
               imageUrl={project.imageUrl}
               liveUrl={project.liveUrl}
               githubUrl={project.githubUrl}
+              slug={project.slug}
             />
           ))}
         </div>
