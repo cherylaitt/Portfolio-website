@@ -463,7 +463,7 @@ export default function ProjectPage({ params }: { params: Promise<{ slug: string
             Project Not Found
           </Typography>
           <Typography variant="p" size="lg" color="secondary" className="mb-8">
-            The project you're looking for doesn't exist.
+            The project you&apos;re looking for doesn&apos;t exist.
           </Typography>
           <Link href="/">
             <Button variant="primary" size="lg">
