@@ -44,12 +44,12 @@ const projectData: Record<string, ProjectData> = {
     title: 'Preface Public Website',
     slug: 'preface-public-website',
     description: '',
-    longDescription: ' Preface is an EdTech company which provides education in 3 aspects: daily latest technology content to promote learning with casual lifestyle, tech education on children, and tech enabling for organisations. This responsive website is to provide a platform for customers to learn about Preface and its products.',
-    technologies: ['Next.js', 'React.js', 'TypeScript', 'Tailwind CSS', 'Material UI', 'Stripe', 'Vercel'],
+    longDescription: 'Preface is an EdTech company which provides education in 3 aspects: daily latest technology content to promote learning with casual lifestyle, tech education on children, and tech enabling for organisations. This responsive website is to provide a platform for customers to learn about Preface and its products.',
+    technologies: ['Next.js', 'React.js', 'TypeScript', 'HTML & CSS', 'Tailwind CSS', 'Material UI', 'Stripe', 'Vercel'],
     imageUrl: 'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758464324/home-hero-banner_i85a2z.png',
     galleryImages: [],
     liveUrl: 'https://preface.ai',
-    githubUrl: 'https://github.com/preface',
+    githubUrl: '',
     features: [
       {
         title: 'Just Start Campaign 2025',
@@ -124,13 +124,13 @@ const projectData: Record<string, ProjectData> = {
     id: '2',
     title: 'Preface Admin Portal',
     slug: 'preface-admin-portal',
-    description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
+    description: '',
     longDescription: 'The Preface Admin Portal is a comprehensive backend management system designed to streamline administrative tasks, manage user data, and provide analytics insights. Built with Ruby on Rails, it offers robust functionality for content management and user administration.',
-    technologies: ['Ruby on Rails', 'PostgreSQL', 'jQuery', 'Sidekiq', 'Stripe', 'Heroku', 'Bootstrap'],
+    technologies: ['Ruby on Rails', 'PostgreSQL', 'jQuery', 'HTML & CSS', 'Sidekiq', 'Stripe', 'Heroku', 'Devise'],
     imageUrl: 'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465036/admin-portal-happening-list-page_khrowp.png',
     galleryImages: [],
-    liveUrl: 'https://admin.preface.ai',
-    githubUrl: 'https://github.com/preface/admin',
+    liveUrl: 'https://portal.preface.ai',
+    githubUrl: '',
     features: [
       {
         title: 'Support of Admin Operations',
@@ -188,16 +188,16 @@ const projectData: Record<string, ProjectData> = {
       'Created a flexible permission system',
       'Applied encryption and security best practices'
     ],
-    duration: '8 months',
-    role: 'Backend Developer'
+    duration: '3 years',
+    role: 'Full Stack Developer'
   },
   'preface-mobile-app': {
     id: '3',
     title: 'Preface Mobile App',
     slug: 'preface-mobile-app',
-    description: 'A beautiful weather dashboard that displays current weather conditions and forecasts with interactive maps and charts.',
+    description: '',
     longDescription: 'The Preface Mobile App brings the educational experience to mobile devices, offering students and instructors a seamless way to access courses, submit assignments, and track progress on the go. Built with React Native, it provides a native-like experience across iOS and Android platforms.',
-    technologies: ['React Native', 'Expo', 'TypeScript', 'Stripe', 'Eats365', 'Firebase', 'Redux'],
+    technologies: ['React Native', 'Expo', 'TypeScript', 'Stripe', 'Eats365', 'Contentful'],
     imageUrl: 'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465821/papp-google-listing_vaxewq.png',
     galleryImages: [
       'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465821/papp-google-listing_vaxewq.png',
@@ -205,107 +205,60 @@ const projectData: Record<string, ProjectData> = {
       'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465036/admin-portal-happening-list-page_khrowp.png'
     ],
     videos: [
-      'https://res.cloudinary.com/dbfuydrg0/video/upload/v1758466200/preface-mobile-demo_ghi789.mp4'
+      'https://res.cloudinary.com/dbfuydrg0/video/upload/v1759252810/apply-voucher-to-cart_owkucd.mov',
+      'https://res.cloudinary.com/dbfuydrg0/video/upload/v1759254120/play-techbites-from-carousel_lylld0.mp4',
+      'https://res.cloudinary.com/dbfuydrg0/video/upload/v1759254223/bridge-between-website-and-app_ktcxw4.mov',
+      'https://res.cloudinary.com/dbfuydrg0/video/upload/v1759254254/Apple-signin_wziotb.mov',
+      'https://res.cloudinary.com/dbfuydrg0/video/upload/v1759254308/iOS_download_and_share_event_ticket_hfmfdr.mov',
+      'https://res.cloudinary.com/dbfuydrg0/video/upload/v1759253090/attendance_taking_psnm77.mp4'
     ],
     liveUrl: 'https://apps.apple.com/preface',
-    githubUrl: 'https://github.com/preface/mobile',
+    githubUrl: '',
     features: [
       {
         title: 'Cross-Platform',
-        description: 'Native compatibility across iOS and Android platforms',
-        detailedDescription: 'Built with React Native for true native performance across iOS and Android. Features platform-specific optimizations, native UI components, and seamless integration with device features like camera, GPS, and push notifications.',
+        description: '',
+        detailedDescription: 'Deployed on both iOS and Android.',
         images: [
           'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465821/papp-google-listing_vaxewq.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758464324/home-hero-banner_i85a2z.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465036/admin-portal-happening-list-page_khrowp.png'
+          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1759253536/Screenshot_2025-10-01_at_1.31.56_AM_o7grun.png'
         ],
         contributions: [
-          'True native performance',
           'Platform-specific optimizations',
-          'Single codebase for both platforms',
-          'Native device feature integration'
+          'Single codebase for both platforms'
         ]
       },
       {
-        title: 'Offline Access',
-        description: 'Offline content access and synchronization capabilities',
-        detailedDescription: 'Advanced offline-first architecture with intelligent caching, background synchronization, and conflict resolution. Users can access course materials, take notes, and complete assignments even without internet connectivity.',
+        title: 'F&B Ordering System',
+        description: '',
+        detailedDescription: 'Customers can order food and beverages from the app to learn Tech knowledge with food and coffee in a casual way.',
         images: [
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758464324/home-hero-banner_i85a2z.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465821/papp-google-listing_vaxewq.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465720/customer-portal-login-page_ztcpl8.png'
+          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1759252025/Screenshot_20250922_143158_Preface_ux2gxj.jpg',
+          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1759253051/Screenshot_20251001_012034_Preface_yr355q.jpg',
+          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1759253045/Screenshot_20251001_012045_Preface_oeaxza.jpg'
         ],
         contributions: [
-          'Intelligent content caching',
-          'Background synchronization',
-          'Conflict resolution system',
-          'Seamless online/offline transitions'
+          'Integrated with Eats365 to manage the food and beverages',
+          'Implemented the ordering system to allow the customers to order the food and beverages',
+          'Integrated with Stripe to manage the payment of the food and beverages',
+          'Implemented the Google Pay and Apple Pay to allow the customers to pay for the food and beverages',
         ]
       },
       {
-        title: 'Push Notifications',
-        description: 'Smart push notifications for course updates and reminders',
-        detailedDescription: 'Intelligent notification system with personalized messaging, smart scheduling, and engagement tracking. Features include rich notifications with media, deep linking, and analytics for optimizing user engagement.',
+        title: 'Daily Tech Learning',
+        description: '',
+        detailedDescription: 'Users can learn the latest tech news and contents daily by watching the techbites videos and reading the techbites articles.',
         images: [
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465036/admin-portal-happening-list-page_khrowp.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758464324/home-hero-banner_i85a2z.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465821/papp-google-listing_vaxewq.png'
+          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465360/learn-tab_tre0w6.png',
+          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1759253039/Screenshot_20251001_012108_Preface_utbx66.jpg',
+          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1759253773/Screenshot_20251001_012116_Preface_mhv3uw.jpg'
         ],
         contributions: [
-          'Personalized notification content',
-          'Smart delivery scheduling',
-          'Rich media notifications',
-          'Advanced engagement analytics'
+          'Integrated with Contentful to manage the content of the techbites videos and articles',
+          'Implemented the video playing feature to play the techbites videos',
+          'Implemented the article reading feature to read the techbites articles',
         ]
       },
-      {
-        title: 'In-App Payments',
-        description: 'Seamless in-app payment processing for courses and subscriptions',
-        detailedDescription: 'Integrated payment system with support for multiple payment methods, subscription management, and secure transaction processing. Features include Apple Pay, Google Pay, and traditional card payments with PCI compliance.',
-        images: [
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465720/customer-portal-login-page_ztcpl8.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465036/admin-portal-happening-list-page_khrowp.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758464324/home-hero-banner_i85a2z.png'
-        ],
-        contributions: [
-          'Multiple payment method support',
-          'Secure transaction processing',
-          'Subscription management',
-          'PCI compliance and security'
-        ]
-      },
-      {
-        title: 'Video Streaming',
-        description: 'High-quality video streaming for course content',
-        detailedDescription: 'Advanced video streaming with adaptive bitrate, offline downloading, and interactive features. Supports multiple video formats, subtitle integration, and analytics for tracking viewing behavior and engagement.',
-        images: [
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465821/papp-google-listing_vaxewq.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758464324/home-hero-banner_i85a2z.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465720/customer-portal-login-page_ztcpl8.png'
-        ],
-        contributions: [
-          'Adaptive bitrate streaming',
-          'Offline video downloading',
-          'Interactive video features',
-          'Comprehensive viewing analytics'
-        ]
-      },
-      {
-        title: 'Progress Tracking',
-        description: 'Comprehensive progress tracking and analytics dashboard',
-        detailedDescription: 'Advanced progress tracking with detailed analytics, achievement systems, and personalized learning paths. Features include completion tracking, skill assessments, and detailed reports for learners and instructors.',
-        images: [
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758464324/home-hero-banner_i85a2z.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465036/admin-portal-happening-list-page_khrowp.png',
-          'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465821/papp-google-listing_vaxewq.png'
-        ],
-        contributions: [
-          'Detailed progress analytics',
-          'Achievement and badge systems',
-          'Personalized learning paths',
-          'Comprehensive reporting tools'
-        ]
-      }
     ],
     challenges: [
       'Ensuring consistent UI across different screen sizes',
@@ -326,17 +279,21 @@ const projectData: Record<string, ProjectData> = {
     id: '4',
     title: 'Preface Customer Portal',
     slug: 'preface-customer-portal',
-    description: 'A modern, responsive portfolio website showcasing projects and skills with smooth animations and dark mode support.',
+    description: '',
     longDescription: 'The Preface Customer Portal is a comprehensive platform designed for customers to manage their accounts, access course materials, track progress, and interact with instructors. It provides a personalized learning experience with advanced features for course management and progress tracking.',
-    technologies: ['Next.js', 'React.js', 'JavaScript', 'Tailwind CSS', 'Material UI', 'Stripe', 'Vercel'],
+    technologies: ['Next.js', 'React.js', 'JavaScript', 'Tailwind CSS', 'Material UI', 'Stripe', 'Vercel', 'Contentful'],
     imageUrl: 'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465720/customer-portal-login-page_ztcpl8.png',
     galleryImages: [
       'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465720/customer-portal-login-page_ztcpl8.png',
       'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758464324/home-hero-banner_i85a2z.png',
       'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465036/admin-portal-happening-list-page_khrowp.png'
     ],
-    liveUrl: 'https://portal.preface.ai',
-    githubUrl: 'https://github.com/preface/customer-portal',
+    videos: [
+      'https://res.cloudinary.com/dbfuydrg0/video/upload/v1759249525/series-bundle-payment-link_nnmfiy.mov',
+      'https://res.cloudinary.com/dbfuydrg0/video/upload/v1759249908/2023-09-09_23-14-42_mpqwip.mp4'
+    ],
+    liveUrl: 'https://app.preface.ai/checkout/kids-seasonal-camp-2025-26?lang=en-GB',
+    githubUrl: '',
     features: [
       {
         title: 'Techbites Subscription',
@@ -360,13 +317,18 @@ const projectData: Record<string, ProjectData> = {
       },
       {
         title: 'Payment Link and Scheduling System',
-        description: 'Payment Link and Scheduling System',
-        detailedDescription: 'Payment Link and Scheduling System',
+        description: '',
+        detailedDescription: 'Payment Link for customers to buy the courses & Scheduling System for customers to schedule the classes.',
         images: [
           'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758476641/payment-link-1_pir1yb.png'
         ],
         contributions: [
-          'Created the payment link and scheduling system to support the payment and scheduling of the 1-on-1 classes',
+          'Built the dynamic payment links for packages of regular bootcamps, seasonal bootcamps, and special campaigns based on the business selling strategies',
+          'Built the scheduling system for customers to schedule the classes',
+          'Integrated with the backend payment gateway to support the payment',
+          'Supported the user to manage their schedule and classes',
+          'Carried out Testing and Bug bash to fix the issues of the scheduling system',
+          'Tech support for the customers during the campaigns'
         ]
       },
     ],
@@ -382,8 +344,8 @@ const projectData: Record<string, ProjectData> = {
       'Implemented efficient content management systems',
       'Applied microservices architecture for scalability'
     ],
-    duration: '7 months',
-    role: 'Frontend Developer'
+    duration: '3 years',
+    role: 'Full Stack Developer'
   }
 };
 
@@ -488,68 +450,6 @@ export default function ProjectPage({ params }: { params: Promise<{ slug: string
         </div>
       </section>
 
-      {/* Features Showcase */}
-      <section className="py-20 bg-white dark:bg-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <Typography variant="h2" size="4xl" weight="bold" className="mb-6">
-              Key Features & Capabilities
-            </Typography>
-            <Typography variant="p" size="lg" color="secondary" className="max-w-3xl mx-auto">
-              Explore the comprehensive features that make this project stand out and deliver exceptional value to users.
-            </Typography>
-          </div>
-
-          <div className="space-y-16">
-            {project.features.map((feature, index) => (
-              <Card key={index} className="p-8 hover:shadow-xl transition-all duration-300 border-l-4 border-l-blue-500 overflow-hidden">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                  {/* Feature Images */}
-                  <FeatureImageGallery 
-                    images={feature.images}
-                    title={feature.title}
-                  />
-
-                  {/* Feature Content */}
-                  <div className="flex flex-col h-full">
-                    <div className="flex items-center mb-6">
-                      <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mr-4">
-                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                        </svg>
-                      </div>
-                      <Typography variant="h3" size="2xl" weight="bold">
-                        {feature.title}
-                      </Typography>
-                    </div>
-                    
-                    <Typography variant="p" size="lg" color="secondary" className="leading-relaxed mb-6">
-                      {feature.detailedDescription}
-                    </Typography>
-                    
-                    <div className="space-y-4">
-                      <Typography variant="h4" size="lg" weight="semibold" className="text-green-600 dark:text-green-400">
-                        Key Contributions
-                      </Typography>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                        {feature.contributions.map((contribution, contributionIndex) => (
-                          <div key={contributionIndex} className="flex items-start space-x-3">
-                            <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                            <Typography variant="span" size="sm" color="secondary">
-                              {contribution}
-                            </Typography>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Project Details & Tech Stack */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -629,17 +529,64 @@ export default function ProjectPage({ params }: { params: Promise<{ slug: string
         </div>
       </section>
 
-      {/* Project Gallery */}
-      <section className="py-20">
+      {/* Features Showcase */}
+      <section className="py-20 bg-white dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Typography variant="h2" size="3xl" weight="bold" className="text-center mb-12">
-            Project Gallery
-          </Typography>
-          <div className="max-w-4xl mx-auto">
-            <ImageCarousel 
-              images={project.galleryImages}
-              title={project.title}
-            />
+          <div className="text-center mb-16">
+            <Typography variant="h2" size="4xl" weight="bold" className="mb-6">
+              Key Features I Contributed To
+            </Typography>
+            <Typography variant="p" size="lg" color="secondary" className="max-w-3xl mx-auto">
+              Explore the features in which I contributed to this project.
+            </Typography>
+          </div>
+
+          <div className="space-y-16">
+            {project.features.map((feature, index) => (
+              <Card key={index} className="p-8 hover:shadow-xl transition-all duration-300 border-l-4 border-l-blue-500 overflow-hidden">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  {/* Feature Images */}
+                  <FeatureImageGallery 
+                    images={feature.images}
+                    title={feature.title}
+                  />
+
+                  {/* Feature Content */}
+                  <div className="flex flex-col h-full">
+                    <div className="flex items-center mb-6">
+                      <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mr-4">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                      </div>
+                      <Typography variant="h3" size="2xl" weight="bold">
+                        {feature.title}
+                      </Typography>
+                    </div>
+                    
+                    <Typography variant="p" size="lg" color="secondary" className="leading-relaxed mb-6">
+                      {feature.detailedDescription}
+                    </Typography>
+                    
+                    <div className="space-y-4">
+                      <Typography variant="h4" size="lg" weight="semibold" className="text-green-600 dark:text-green-400">
+                        Key Contributions
+                      </Typography>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        {feature.contributions.map((contribution, contributionIndex) => (
+                          <div key={contributionIndex} className="flex items-start space-x-3">
+                            <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                            <Typography variant="span" size="sm" color="secondary">
+                              {contribution}
+                            </Typography>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -657,7 +604,7 @@ export default function ProjectPage({ params }: { params: Promise<{ slug: string
       )}
 
       {/* Feature Implementation Journey */}
-      <section className="py-20 bg-white dark:bg-gray-800">
+      {/* <section className="py-20 bg-white dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <Typography variant="h2" size="4xl" weight="bold" className="mb-6">
@@ -729,7 +676,7 @@ export default function ProjectPage({ params }: { params: Promise<{ slug: string
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action */}
       <section className="py-20">

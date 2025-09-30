@@ -25,8 +25,8 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = '' }) => 
       id: '1',
       title: 'Preface Public Website',
       slug: 'preface-public-website',
-      description: 'A full-stack e-commerce platform built with Next.js, featuring user authentication, payment processing, and admin dashboard.',
-      technologies: ['Next.js', 'React.js', 'TypeScript', 'Tailwind CSS', 'Material UI'],
+      description: 'Preface is an EdTech company which provides education in 3 aspects: daily latest technology content to promote learning with casual lifestyle, tech education on children, and tech enabling for organisations. This responsive website is to provide a platform for customers to learn about Preface and its products.',
+      technologies: ['Next.js', 'React.js', 'TypeScript', 'HTML & CSS', 'Tailwind CSS', 'Material UI', 'Stripe', 'Vercel'],
       imageUrl: 'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758464324/home-hero-banner_i85a2z.png',
       liveUrl: 'https://example.com',
     },
@@ -34,8 +34,8 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = '' }) => 
       id: '2',
       title: 'Preface Admin Portal',
       slug: 'preface-admin-portal',
-      description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      technologies: ['Ruby on Rails', 'PostgreSQL', 'jQuery', 'Sidekiq', 'Stripe', 'Heroku'],
+      description: 'The Preface Admin Portal is a comprehensive backend management system designed to streamline administrative tasks, manage user data, and provide analytics insights. Built with Ruby on Rails, it offers robust functionality for content management and user administration.',
+      technologies: ['Ruby on Rails', 'PostgreSQL', 'jQuery', 'HTML & CSS', 'Sidekiq', 'Stripe', 'Heroku', 'Devise'],
       imageUrl: 'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465036/admin-portal-happening-list-page_khrowp.png',
       liveUrl: 'https://example.com',
     },
@@ -43,8 +43,8 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = '' }) => 
       id: '3',
       title: 'Preface Mobile App',
       slug: 'preface-mobile-app',
-      description: 'A beautiful weather dashboard that displays current weather conditions and forecasts with interactive maps and charts.',
-      technologies: ['React Native', 'Expo', 'Typescript', 'Stripe', 'Eats365'],
+      description: 'The Preface Mobile App brings the educational experience to mobile devices, offering students and instructors a seamless way to access courses, submit assignments, and track progress on the go. Built with React Native, it provides a native-like experience across iOS and Android platforms.',
+      technologies: ['React Native', 'Expo', 'TypeScript', 'Stripe', 'Eats365', 'Contentful'],
       imageUrl: 'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465821/papp-google-listing_vaxewq.png',
       liveUrl: 'https://example.com',
     },
@@ -52,8 +52,8 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = '' }) => 
       id: '4',
       title: 'Preface Customer Portal',
       slug: 'preface-customer-portal',
-      description: 'A modern, responsive portfolio website showcasing projects and skills with smooth animations and dark mode support.',
-      technologies: ['Next.js', 'React.js', 'JavaScript', 'Tailwind CSS', 'Material UI', 'Stripe'],
+      description: 'The Preface Customer Portal is a comprehensive platform designed for customers to manage their accounts, access course materials, track progress, and interact with instructors. It provides a personalized learning experience with advanced features for course management and progress tracking.',
+      technologies: ['Next.js', 'React.js', 'JavaScript', 'Tailwind CSS', 'Material UI', 'Stripe', 'Vercel', 'Contentful'],
       imageUrl: 'https://res.cloudinary.com/dbfuydrg0/image/upload/v1758465720/customer-portal-login-page_ztcpl8.png',
       liveUrl: 'https://example.com',
     },
@@ -78,6 +78,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = '' }) => 
           {projects.map((project) => (
             <ProjectCard
               key={project.id}
+              className="cursor-pointer"
               title={project.title}
               description={project.description}
               technologies={project.technologies}

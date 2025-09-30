@@ -13,9 +13,9 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
   
   const navItems = [
     { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
+    // { name: 'About', href: '#about' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Skills', href: '#skills' },
+    //{ name: 'Skills', href: '#skills' },
     { name: 'Contact', href: '#contact' },
   ];
   
@@ -52,11 +52,11 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
           </nav>
           
           {/* CTA Button */}
-          <div className="hidden md:block">
+          {/* <div className="hidden md:block">
             <Button variant="primary" size="sm">
               Download CV
             </Button>
-          </div>
+          </div> */}
           
           {/* Mobile menu button */}
           <div className="md:hidden">
