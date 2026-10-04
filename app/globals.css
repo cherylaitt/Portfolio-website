@@ -73,3 +73,108 @@ html {
   background-size: 200% 200%;
   animation: gradient-shift 3s ease infinite;
 }
+
+/* Keep anchored sections clear of the fixed header */
+section[id] {
+  scroll-margin-top: 4rem;
+}
+
+/* Hero gradient mesh */
+.hero-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(72px);
+  opacity: 0.35;
+  will-change: transform;
+}
+
+.hero-blob-1 {
+  width: 28rem;
+  height: 28rem;
+  top: -6rem;
+  left: -6rem;
+  background: #60a5fa;
+  animation: hero-float-1 22s ease-in-out infinite alternate;
+}
+
+.hero-blob-2 {
+  width: 24rem;
+  height: 24rem;
+  bottom: -8rem;
+  right: -4rem;
+  background: #a78bfa;
+  animation: hero-float-2 26s ease-in-out infinite alternate;
+}
+
+.hero-blob-3 {
+  width: 18rem;
+  height: 18rem;
+  top: 40%;
+  left: 55%;
+  background: #818cf8;
+  animation: hero-float-3 30s ease-in-out infinite alternate;
+}
+
+@media (prefers-color-scheme: dark) {
+  .hero-blob {
+    opacity: 0.18;
+  }
+}
+
+@keyframes hero-float-1 {
+  to { transform: translate3d(8rem, 5rem, 0) scale(1.1); }
+}
+
+@keyframes hero-float-2 {
+  to { transform: translate3d(-7rem, -4rem, 0) scale(1.15); }
+}
+
+@keyframes hero-float-3 {
+  to { transform: translate3d(-10rem, 3rem, 0) scale(0.9); }
+}
+
+/* Tech stack marquee */
+@keyframes marquee {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
+
+.marquee-track {
+  animation: marquee 40s linear infinite;
+}
+
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-mask {
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero-blob,
+  .animate-gradient,
+  .animate-fade-in-up {
+    animation: none;
+  }
+
+  .marquee-track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .marquee-duplicate {
+    display: none;
+  }
+
+  .marquee-mask {
+    mask-image: none;
+  }
+}

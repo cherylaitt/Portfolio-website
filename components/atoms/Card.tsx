@@ -35,7 +35,7 @@ const Card: React.FC<CardProps> = ({
   
   const classes = `bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 ${paddingClasses[padding]} ${shadowClasses[shadow]} ${hoverClasses} ${className}`;
   
-  return <div role="button" className={classes} onClick={onClick}>{children}</div>;
+  return <div role={onClick ? 'button' : undefined} className={classes} onClick={onClick}>{children}</div>;
 };
 
 export default Card;

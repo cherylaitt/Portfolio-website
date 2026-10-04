@@ -1,24 +1,21 @@
 import React from 'react';
-import Header from '../components/organisms/Header';
 import Hero from '../components/organisms/Hero';
+import TechMarquee from '../components/organisms/TechMarquee';
 import ProjectsSection from '../components/organisms/ProjectsSection';
-import AboutSection from '../components/organisms/AboutSection';
 import SkillsSection from '../components/organisms/SkillsSection';
 import ContactSection from '../components/organisms/ContactSection';
-import Footer from '../components/organisms/Footer';
+import { isResumeAvailable } from '../lib/resume';
 
 export default function Home() {
+  const resumeAvailable = isResumeAvailable();
+
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
-      <Header />
-      <main>
-        <Hero />
-        {/* <AboutSection /> */}
-        {/* <SkillsSection /> */}
-        <ProjectsSection />
-        <ContactSection />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <Hero resumeAvailable={resumeAvailable} />
+      <TechMarquee />
+      <ProjectsSection />
+      <SkillsSection />
+      <ContactSection resumeAvailable={resumeAvailable} />
+    </>
   );
 }
