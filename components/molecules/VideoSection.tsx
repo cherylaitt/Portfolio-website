@@ -2,8 +2,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import Typography from '../atoms/Typography';
-import Card from '../atoms/Card';
-import Button from '../atoms/Button';
 
 interface VideoSectionProps {
   videos: string[];
@@ -15,7 +13,6 @@ export default function VideoSection({ videos, title, className = '' }: VideoSec
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [videoAspectRatio, setVideoAspectRatio] = useState<'landscape' | 'portrait' | 'square'>('landscape');
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const goToPrevious = () => {
@@ -51,28 +48,8 @@ export default function VideoSection({ videos, title, className = '' }: VideoSec
     if (videoRef.current) {
       videoRef.current.currentTime = 0;
       setIsPlaying(false);
-      // Reset aspect ratio when video changes
-      setVideoAspectRatio('landscape');
     }
   }, [currentVideoIndex]);
-
-  // Detect video aspect ratio
-  const handleVideoLoadedMetadata = () => {
-    if (videoRef.current) {
-      const video = videoRef.current;
-      const aspectRatio = video.videoWidth / video.videoHeight;
-      
-      console.log('Video dimensions:', video.videoWidth, 'x', video.videoHeight, 'Ratio:', aspectRatio);
-      
-      if (aspectRatio > 1.2) {
-        setVideoAspectRatio('landscape');
-      } else if (aspectRatio < 0.8) {
-        setVideoAspectRatio('portrait');
-      } else {
-        setVideoAspectRatio('square');
-      }
-    }
-  };
 
   if (!videos || videos.length === 0) {
     return null;
@@ -106,7 +83,6 @@ export default function VideoSection({ videos, title, className = '' }: VideoSec
                 preload="metadata"
                 onPlay={() => setIsPlaying(true)}
                 onPause={() => setIsPlaying(false)}
-                onLoadedMetadata={handleVideoLoadedMetadata}
                 poster=""
               >
                 <source src={videos[currentVideoIndex]} type="video/mp4" />
